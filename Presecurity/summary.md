@@ -43,3 +43,126 @@ One of the main benefits of the OSI model is that devices can have different fun
 ![7 layers](7layers.png)
 
 At every individual layer that data travels through, specific processes take place, and pieces of information are added to this data, a process known as *encapsulation*.
+
+## Mnemonic: 
+### <kbd> Please Do Not Throw Spinach Pizza Away </kbd>
+- Physical
+- Data-Link
+- Network
+- Transport
+- Session
+- Presentation
+- Application
+***
+
+#### 1. Physical Layer (L1)
+Transmits raw bits over a physical medium.  
+
+- Deals with hardware (cables, signals, voltage)
+- Data is sent as binary (1s and 0s)
+- No addressing or logic, just transmission
+
+e.g. Ethernet cables, Electrical signals, Network ports
+
+***
+
+#### 2. Data-Link Layer (L2)
+Handles physical addressing and frame transmission. 
+
+- Adds **MAC addresses** (source + destination)
+- Uses NIC (Network Interface Card)
+- Ensures data is in correct format (frames)
+
+***
+
+#### 3. Network Layer (L3)
+Routing and logical addressing. 
+
+- Uses **IP addresses**
+- Determines best path to destination
+- Handles packet forwarding between networks
+
+**Routing Factors:**
+- Shortest path
+- Reliability
+- Speed of connection
+
+**Protocols:**
+- OSPF (Open Shortest Path First)
+- RIP (Routing Information Protocol)
+
+**Devices:**
+- Routers (Layer 3 devices)
+
+***
+
+#### 4. Transport Layer (L4)
+End-to-end communication and reliability.  
+
+**TCP (Transmission Control Protocol)**:
+- Reliable, connection-based
+- Ensures data is received correctly and in order
+- Error checking and retransmission
+
+*Pros:*
+- Accurate and complete data
+- Flow control
+
+*Cons:*
+- Slower due to overhead
+
+*Used in:*
+- Web browsing
+- Email
+- File transfer
+
+***
+
+**UDP (User Datagram Protocol)**:
+- Fast, connectionless
+- No guarantee of delivery
+- No error checking
+
+*Pros:*
+- Very fast
+- Low overhead
+- Flexible for applications
+
+*Cons:*
+- Data loss possible
+- No ordering or retransmission
+
+*Used in:*
+- Streaming
+- Gaming
+- DNS, DHCP
+
+***
+
+## 5. Session Layer (L5)
+Manages sessions (connections between devices).
+- Establishes, maintains, and terminates sessions
+- Handles session checkpoints (resume support)
+- Ensures sessions are isolated
+
+***
+
+## 6. Presentation Layer (L6)
+Data formatting and translation.
+- Converts data into usable format
+- Handles encryption and decryption
+- Ensures compatibility between systems
+
+e.g. HTTPS encryption, Data encoding formats
+
+***
+
+## 7. Application Layer (L7)
+Interface between user and network. 
+
+- Provides user-facing services
+- Defines how applications communicate
+
+e.g. HTTP, DNS, Email clients
+
+***
